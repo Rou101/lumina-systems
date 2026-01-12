@@ -1,0 +1,7 @@
+{
+  "name": "Lumina App",
+  "description": "El Sistema Operativo para la gastronomía moderna.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

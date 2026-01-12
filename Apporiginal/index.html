@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#050505" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <title>Lumina Masivo | LVOS v1.1</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+      :root {
+        /* DEFAULT DARK MODE (Void) - High Contrast Update */
+        --lumina-base: #050505;
+        --lumina-panel: #121212;
+        --lumina-border: #333333;
+        --lumina-text-primary: #FFFFFF;
+        --lumina-text-secondary: #CCCCCC; /* Aumentado de #888 a #CCC */
+        --lumina-text-muted: #999999;     /* Aumentado de #444 a #999 */
+        
+        --lumina-cyan: #00F0FF;
+        --lumina-violet: #7000FF;
+        --lumina-fuchsia: #FF00FF;
+      }
+
+      /* LIGHT MODE (Clinic / Mirror's Edge) */
+      .light-mode {
+        --lumina-base: #F5F7FA;
+        --lumina-panel: #FFFFFF;
+        --lumina-border: #E5E7EB;
+        --lumina-text-primary: #111827;
+        --lumina-text-secondary: #4B5563;
+        --lumina-text-muted: #9CA3AF;
+        
+        --lumina-cyan: #0891b2; 
+        --lumina-violet: #7c3aed;
+        --lumina-fuchsia: #c026d3;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--lumina-base);
+        color: var(--lumina-text-primary);
+        overscroll-behavior-y: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      /* Cyber-Scrollbar */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: var(--lumina-base); }
+      ::-webkit-scrollbar-thumb { background: var(--lumina-border); }
+      ::-webkit-scrollbar-thumb:hover { background: var(--lumina-cyan); }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lumina: {
+                base: 'var(--lumina-base)',
+                panel: 'var(--lumina-panel)',
+                border: 'var(--lumina-border)',
+                cyan: 'var(--lumina-cyan)',
+                violet: 'var(--lumina-violet)',
+                fuchsia: 'var(--lumina-fuchsia)',
+                text: {
+                  primary: 'var(--lumina-text-primary)',
+                  secondary: 'var(--lumina-text-secondary)',
+                  muted: 'var(--lumina-text-muted)'
+                }
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'], 
+              mono: ['JetBrains Mono', 'Menlo', 'monospace'],
+            },
+            letterSpacing: {
+              tighter: '-0.05em', 
+              widest: '0.2em',    
+            },
+            borderRadius: {
+              'none': '0',
+              'sm': '4px', 
+              'md': '8px',
+            },
+            boxShadow: {
+              'glow-cyan': '0 0 20px rgba(0, 240, 255, 0.3)',
+              'glow-violet': '0 0 20px rgba(112, 0, 255, 0.3)',
+              'glow-fuchsia': '0 0 20px rgba(255, 0, 255, 0.3)',
+            },
+            animation: {
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'fade-in-up': 'fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'glitch': 'glitch 1s linear infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              glitch: {
+                '2%, 64%': { transform: 'translate(2px,0) skew(0deg)' },
+                '4%, 60%': { transform: 'translate(-2px,0) skew(0deg)' },
+                '62%': { transform: 'translate(0,0) skew(5deg)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
