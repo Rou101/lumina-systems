@@ -1,0 +1,96 @@
+{
+    "hero": {
+        "title": "LUMINA",
+        "title_suffix": "MASIVO",
+        "subtitle_prefix": "The next-generation event management ecosystem.",
+        "subtitle_highlight1": "Instant interactions.",
+        "subtitle_highlight2": "Zero latency.",
+        "subtitle_suffix": "Pure immersion.",
+        "cta_staff": "Staff Portal",
+        "cta_client": "Launch Client App"
+    },
+    "features": {
+        "title": "System Capabilities",
+        "items": [
+            {
+                "title": "Lightning Fast",
+                "desc": "Optimized for sub-millisecond updates across all connected devices.",
+                "icon": "zap"
+            },
+            {
+                "title": "Rock Solid",
+                "desc": "Enterprise-grade reliability handling thousands of concurrent users.",
+                "icon": "shield"
+            },
+            {
+                "title": "Universal Access",
+                "desc": "Works perfectly on any device, anywhere. No app installation required.",
+                "icon": "globe"
+            },
+            {
+                "title": "Real-time Sync",
+                "desc": "State changes propagate instantly to kitchen, bar, and admin panels.",
+                "icon": "clock"
+            }
+        ]
+    },
+    "mechanics": {
+        "title": "Execution Protocol",
+        "subtitle": "Order Architecture",
+        "steps": [
+            {
+                "title": "Secure Handshake",
+                "desc": "Initiate encrypted session via high-density QR protocol. Instant authorization.",
+                "status": "INIT_SEQ"
+            },
+            {
+                "title": "Node Sync",
+                "desc": "Real-time state verification across client cluster. <0.05s latency via GCP core.",
+                "status": "NET_ACTIVE"
+            },
+            {
+                "title": "Ledger Split",
+                "desc": "Automated resource distribution. Multi-vector settlement engine.",
+                "status": "EXECUTING"
+            }
+        ],
+        "security": {
+            "label": "Secured by Google Cloud Platform",
+            "compliance": "ISO 27001 // PCI-DSS L1"
+        }
+    },
+    "performance": {
+        "title": "Zero Blocking.",
+        "title_highlight": "Pure Flow.",
+        "desc": "We removed every barrier between the user and the experience. No loading spinners, no modal backdrops, just instant feedback. Lumina operates at the speed of thought.",
+        "stats": {
+            "latency": {
+                "value": "0.05s",
+                "label": "Latency"
+            },
+            "uptime": {
+                "value": "100%",
+                "label": "Uptime"
+            },
+            "scale": {
+                "value": "∞",
+                "label": "Scale"
+            }
+        },
+        "terminal": {
+            "ready": "SYSTEM_READY",
+            "input": "AWAITING_INPUT_"
+        }
+    },
+    "footer": {
+        "rights": "© 2026 Lumina Masivo. All rights reserved.",
+        "links": {
+            "corporate": "Corporate",
+            "admin": "Admin",
+            "docs": "Documentation"
+        }
+    },
+    "cta": {
+        "book": "Book a Demo"
+    }
+}

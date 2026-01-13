@@ -1,0 +1,96 @@
+{
+    "hero": {
+        "title": "LUMINA",
+        "title_suffix": "MASIVO",
+        "subtitle_prefix": "El ecosistema de eventos de próxima generación.",
+        "subtitle_highlight1": "Interacciones instantáneas.",
+        "subtitle_highlight2": "Cero latencia.",
+        "subtitle_suffix": "Inmersión pura.",
+        "cta_staff": "Portal Staff",
+        "cta_client": "App Cliente"
+    },
+    "features": {
+        "title": "Capacidades del Sistema",
+        "items": [
+            {
+                "title": "Velocidad Relámpago",
+                "desc": "Optimizado para actualizaciones sub-milisegundo en todos los dispositivos.",
+                "icon": "zap"
+            },
+            {
+                "title": "Sólido como Roca",
+                "desc": "Confiabilidad empresarial manejando miles de usuarios concurrentes.",
+                "icon": "shield"
+            },
+            {
+                "title": "Acceso Universal",
+                "desc": "Funciona perfectamente en cualquier dispositivo. Sin instalación de apps.",
+                "icon": "globe"
+            },
+            {
+                "title": "Sincronización Real",
+                "desc": "Los cambios de estado se propagan instantáneamente a cocina, barra y admin.",
+                "icon": "clock"
+            }
+        ]
+    },
+    "mechanics": {
+        "title": "Protocolo de Ejecución",
+        "subtitle": "Arquitectura de Pedidos",
+        "steps": [
+            {
+                "title": "Handshake Seguro",
+                "desc": "Iniciar sesión encriptada vía protocolo QR. Autorización instantánea.",
+                "status": "INIT_SEQ"
+            },
+            {
+                "title": "Sincronización de Nodos",
+                "desc": "Verificación de estado en tiempo real. Latencia <0.05s vía núcleo GCP.",
+                "status": "RED_ACTIVA"
+            },
+            {
+                "title": "División de Libro Mayor",
+                "desc": "Distribución automatizada de recursos. Motor de liquidación multi-vector.",
+                "status": "EJECUTANDO"
+            }
+        ],
+        "security": {
+            "label": "Asegurado por Google Cloud Platform",
+            "compliance": "ISO 27001 // PCI-DSS L1"
+        }
+    },
+    "performance": {
+        "title": "Cero Bloqueos.",
+        "title_highlight": "Flujo Puro.",
+        "desc": "Eliminamos barreras entre el usuario y la experiencia. Sin cargas, sin modales, solo feedback instantáneo. Lumina opera a la velocidad del pensamiento.",
+        "stats": {
+            "latency": {
+                "value": "0.05s",
+                "label": "Latencia"
+            },
+            "uptime": {
+                "value": "100%",
+                "label": "Uptime"
+            },
+            "scale": {
+                "value": "∞",
+                "label": "Escala"
+            }
+        },
+        "terminal": {
+            "ready": "SISTEMA_LISTO",
+            "input": "ESPERANDO_INPUT_"
+        }
+    },
+    "footer": {
+        "rights": "© 2026 Lumina Masivo. Todos los derechos reservados.",
+        "links": {
+            "corporate": "Corporativo",
+            "admin": "Admin",
+            "docs": "Documentación"
+        }
+    },
+    "cta": {
+        "book": "Agendar Demo"
+    }
+}

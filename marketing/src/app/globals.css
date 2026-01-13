@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #050505;
+  --color-foreground: #ededed;
+
+  /* Lumina Brand Colors */
+  --color-lumina-black: #050505;
+  --color-lumina-dark: #0A0A0A;
+  --color-lumina-panel: #111111;
+  --color-lumina-cyan: #00F0FF;
+  --color-lumina-violet: #7000FF;
+  --color-lumina-fuchsia: #FF00FF;
+  --color-lumina-border: #333333;
+  --color-lumina-text-primary: #ededed;
+  --color-lumina-text-muted: #a1a1aa;
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Animations */
+  --animate-pulse-fast: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-glow: glow 3s ease-in-out infinite alternate;
+  --animate-beam: beam 2s linear infinite;
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+    }
+
+    100% {
+      box-shadow: 0 0 50px rgba(0, 240, 255, 0.6), 0 0 100px rgba(112, 0, 255, 0.3);
+    }
+  }
+
+  @keyframes beam {
+    0% {
+      background-position: -100%;
+    }
+
+    100% {
+      background-position: 200%;
+    }
+  }
+}
+
+:root {
+  --background: #050505;
+  --foreground: #ededed;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar for cyber aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00F0FF;
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl;
+}
