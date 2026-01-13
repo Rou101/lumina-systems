@@ -111,37 +111,37 @@ const AdminSettings: React.FC = () => {
             <main className="max-w-7xl mx-auto animate-fade-in-up">
                 {activeTab === 'live' && (
                     <LiveOps
-                        orders={orders}
-                        products={products}
-                        pickupZones={config.pickupZones}
+                        orders={orders || []}
+                        products={products || []}
+                        pickupZones={config?.pickupZones || []}
                         now={now}
                     />
                 )}
 
                 {activeTab === 'marketing' && (
                     <MarketingConsole
-                        promotions={config.activePromotions}
-                        products={products}
+                        promotions={config?.activePromotions || []}
+                        products={products || []}
                         now={now}
                     />
                 )}
 
                 {activeTab === 'inventory' && (
                     <InventoryManager
-                        products={products}
+                        products={products || []}
                     />
                 )}
 
                 {activeTab === 'crew' && (
                     <StaffRoster
-                        staff={config.staff}
+                        staff={config?.staff || []}
                         config={config}
                     />
                 )}
 
                 {activeTab === 'logistics' && (
                     <ZoneLogistics
-                        zones={config.pickupZones}
+                        zones={config?.pickupZones || []}
                         config={config}
                     />
                 )}
@@ -149,14 +149,14 @@ const AdminSettings: React.FC = () => {
                 {activeTab === 'branding' && (
                     <BrandingStudio
                         config={config}
-                        formData={formData}
+                        formData={formData || config}
                         setFormData={setFormData}
                     />
                 )}
 
                 {activeTab === 'crm' && (
                     <CRMTable
-                        customers={config.customers}
+                        customers={config?.customers || []}
                     />
                 )}
             </main>

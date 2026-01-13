@@ -69,20 +69,20 @@ export const BrandingStudio: React.FC<BrandingStudioProps> = ({ config, formData
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-4">
-                    {formData.generatedPalettes.map(palette => (
+                    {(formData.generatedPalettes || []).map(palette => (
                         <div
                             key={palette.id}
                             onClick={() => updateEventConfig({ ...config, activePalette: palette })}
                             className={`
                                      cursor-pointer p-4 rounded-sm border-2 transition-all relative overflow-hidden group
-                                     ${config.activePalette.id === palette.id ? 'border-lumina-cyan ring-2 ring-lumina-cyan/20' : 'border-lumina-border opacity-70 hover:opacity-100'}
+                                     ${config?.activePalette?.id === palette.id ? 'border-lumina-cyan ring-2 ring-lumina-cyan/20' : 'border-lumina-border opacity-70 hover:opacity-100'}
                                  `}
                             style={{ backgroundColor: palette.background }}
                         >
                             <div className="relative z-10">
                                 <div className="flex justify-between items-center mb-4">
                                     <h4 style={{ color: palette.text }} className="font-bold uppercase tracking-tight">{palette.name}</h4>
-                                    {config.activePalette.id === palette.id && <span className="bg-lumina-cyan text-black text-[10px] font-bold px-2 py-0.5 rounded-sm">{t('admin_branding_active')}</span>}
+                                    {config?.activePalette?.id === palette.id && <span className="bg-lumina-cyan text-black text-[10px] font-bold px-2 py-0.5 rounded-sm">{t('admin_branding_active')}</span>}
                                 </div>
 
                                 <div className="flex gap-2 h-12 mb-2">

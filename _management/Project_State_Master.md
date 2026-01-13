@@ -52,7 +52,7 @@
 | DEP-01 | CRITICAL | Go Live (Firebase Hosting) | ✅ COMPLETED | Worker |
 | GIT-01 | CRITICAL | Bunker Protocol (Git Secure) | ✅ COMPLETED | Worker |
 | OPS-01 | HIGH | Infinite Upload (CI/CD) | ✅ COMPLETED | Worker |
-| OPS-01 | HIGH | Infinite Upload (CI/CD) | ⚠️ PENDING AUTH | Worker |
+
 
 ## 🏗️ Recent Architecture Decisions
 *   **2026-01-12:** Adopted Manager-Worker Agentic Architecture.
