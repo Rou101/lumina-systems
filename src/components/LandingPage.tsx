@@ -150,13 +150,12 @@ export const LandingPage: React.FC = () => {
                 </div>
 
                 <div className="mt-20 text-center">
-                    <p className="text-white/20 text-[10px] font-mono">
-                        ENGINEERED BY ANTIGRAVITY // COPYRIGHT 2026 LUMINA SYSTEMS INC.
-                    </p>
-                </div>
-            </footer>
-
+                    ENGINEERED BY ANTIGRAVITY // COPYRIGHT 2026 LUMINA SYSTEMS INC. // v1.1-AUTO
+                </p>
         </div>
+            </footer >
+
+        </div >
     );
 };
 export default LandingPage;
